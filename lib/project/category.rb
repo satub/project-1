@@ -17,4 +17,12 @@ class Category
   def self.all
     @@all
   end
+
+  def self.show_categories
+    @@all.each {|category| puts category.type}
+  end
+
+  def show_places
+    @places.each {|place| puts place.name}
+  end
 end
